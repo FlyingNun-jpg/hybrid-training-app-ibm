@@ -1,6 +1,6 @@
 {
-  "name": "Milkbag",
-  "short_name": "Milkbag",
+  "name": "IBM Fitness",
+  "short_name": "IBM Fitness",
   "description": "Run far. Lift heavy. Race hard.",
   "start_url": "/dashboard",
   "display": "standalone",

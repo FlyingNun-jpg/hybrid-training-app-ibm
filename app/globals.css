@@ -12,7 +12,7 @@
   --run: #f0613c; --lift: #7c3aed; --hyrox: #10b981;
 }
 /* Carbon — signature default: deep carbon + volt (dark) */
-:root, [data-theme="carbon"] {
+[data-theme="carbon"] {
   color-scheme: dark;
   --bg: #0a0b0d; --bg-card: #15171b; --bg-nav: #0c0e11;
   --border: rgba(255,255,255,0.08); --border-strong: rgba(255,255,255,0.18);
@@ -26,16 +26,38 @@
   --hero-hyrox: #2bd4a0; --hero-hyrox-fg: #0a0b0d;
   --hero-lift: #d8f64a; --hero-lift-fg: #0a0b0d;
 }
-/* Milkbag — clean & vibrant light */
-[data-theme="milkbag"] {
+/* IBM Fitness — IBM Carbon Design System light */
+:root, [data-theme="ibm-fitness"] {
+  /* IBM Carbon Design System — Blue palette */
   color-scheme: light;
-  --bg: #f6f7fb; --bg-card: #ffffff; --bg-nav: #ffffff;
-  --border: rgba(20,20,45,0.08); --border-strong: rgba(91,77,235,0.3);
-  --text: #15152b; --text-muted: #6b6b85; --text-faint: #a3a3b5;
-  --accent: #5b4deb; --accent-fg: #ffffff;
-  --run: #f0613c; --lift: #2f6bff; --hyrox: #00b377;
+  --bg: #f4f4f4; --bg-card: #ffffff; --bg-nav: #ffffff;
+  --border: rgba(0,0,0,0.10); --border-strong: rgba(15,98,254,0.40);
+  --text: #161616; --text-muted: #525252; --text-faint: #8d8d8d;
+  --accent: #0f62fe; --accent-fg: #ffffff;
+  --run: #da1e28; --lift: #0f62fe; --hyrox: #007d79;
+  --hero-run: #da1e28; --hero-run-fg: #ffffff;
+  --hero-push: #0f62fe; --hero-push-fg: #ffffff;
+  --hero-pull: #491d8b; --hero-pull-fg: #ffffff;
+  --hero-legs: #005d5d; --hero-legs-fg: #ffffff;
+  --hero-hyrox: #007d79; --hero-hyrox-fg: #ffffff;
+  --hero-lift: #0f62fe; --hero-lift-fg: #ffffff;
 }
-/* Milkbag Kings — built different */
+/* IBM Dark theme */
+[data-theme="ibm-dark"] {
+  color-scheme: dark;
+  --bg: #161616; --bg-card: #262626; --bg-nav: #161616;
+  --border: rgba(255,255,255,0.10); --border-strong: rgba(78,121,255,0.45);
+  --text: #f4f4f4; --text-muted: #c6c6c6; --text-faint: #6f6f6f;
+  --accent: #4589ff; --accent-fg: #161616;
+  --run: #ff8389; --lift: #4589ff; --hyrox: #3ddbd9;
+  --hero-run: #ff8389; --hero-run-fg: #161616;
+  --hero-push: #4589ff; --hero-push-fg: #161616;
+  --hero-pull: #be95ff; --hero-pull-fg: #161616;
+  --hero-legs: #08bdba; --hero-legs-fg: #161616;
+  --hero-hyrox: #3ddbd9; --hero-hyrox-fg: #161616;
+  --hero-lift: #4589ff; --hero-lift-fg: #161616;
+}
+/* IBM Fitness Kings — built different */
 [data-theme="kings"] {
   color-scheme: dark;
   --bg: #0d0d1a; --bg-card: #141428; --bg-nav: #0d0d1a;

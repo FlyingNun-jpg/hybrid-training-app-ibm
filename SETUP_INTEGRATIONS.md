@@ -39,7 +39,7 @@ create policy "own push rows" on push_subscriptions
 ## 2. Strava API app
 
 1. Go to https://www.strava.com/settings/api and create an application.
-2. **Authorization Callback Domain**: your production domain (e.g. `milkbag.vercel.app`) — no `https://`, no path.
+2. **Authorization Callback Domain**: your production domain (e.g. `ibm-fitness.vercel.app`) — no `https://`, no path.
 3. Note the **Client ID** and **Client Secret**.
 
 Add to Vercel (Project → Settings → Environment Variables) and to `.env.local` for dev:
@@ -89,7 +89,7 @@ SUPABASE_SERVICE_ROLE_KEY=<Supabase dashboard → Settings → API → service_r
 
 ## 6. Try it
 
-- **Strava**: Settings → Connections → Connect → approve on Strava → log any workout → it appears on your Strava feed with "Logged with Milkbag 🥛".
+- **Strava**: Settings → Connections → Connect → approve on Strava → log any workout → it appears on your Strava feed with "Logged with IBM Fitness ".
 - **Reminders**: Settings → Daily reminder → On (on iPhone this only works after adding the app to the Home Screen, iOS 16.4+). Test the sender manually:
   `curl -H "Authorization: Bearer <CRON_SECRET>" https://<your-domain>/api/push/daily`
 

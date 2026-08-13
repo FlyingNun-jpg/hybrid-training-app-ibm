@@ -136,7 +136,7 @@ export default function ConnectionsPage() {
 
         <h2 style={{ color: 'var(--text)', fontWeight: 500, fontSize: 18, marginBottom: 6, marginTop: 28 }}>Notifications</h2>
         <p style={{ color: 'var(--text-muted)', fontSize: 13, marginBottom: 14 }}>
-          {push.supported ? 'A morning nudge with today’s session.' : 'Add Milkbag to your Home Screen to enable reminders.'}
+          {push.supported ? 'A morning nudge with today’s session.' : 'Add IBM Fitness to your Home Screen to enable reminders.'}
         </p>
         {push.supported && (
           <div style={{ display: 'flex', alignItems: 'center', gap: 14, padding: '14px 16px', borderRadius: 14, border: '0.5px solid var(--border)', background: 'var(--bg-card)' }}>

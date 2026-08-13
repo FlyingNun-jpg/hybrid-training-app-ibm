@@ -34,7 +34,7 @@ export default function ImportPage() {
         setParsed(res.plan)
         setPreview({ name: res.plan.plan_name, weeks: res.plan.plan_data.weeks.length, sessions })
       } catch {
-        setError('That file isn\'t valid JSON. Export your plan as a Milkbag plan file (.json).')
+        setError('That file isn\'t valid JSON. Export your plan as a IBM Fitness plan file (.json).')
       }
     }
     reader.onerror = () => setError('Could not read that file.')
@@ -87,7 +87,7 @@ export default function ImportPage() {
           <div style={{ width: 52, height: 52, borderRadius: 14, background: 'var(--accent)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 16px', fontSize: 22 }}>📥</div>
           <h2 style={{ fontSize: 20, fontWeight: 600, color: 'var(--text)', textAlign: 'center', marginBottom: 6 }}>Import a plan</h2>
           <p style={{ fontSize: 13, color: 'var(--text-muted)', textAlign: 'center', lineHeight: 1.6, marginBottom: 20 }}>
-            Already follow a plan (Pfitzinger, Higdon, your coach&apos;s)? Load it as a Milkbag plan file (.json) and track every session in one place.
+            Already follow a plan (Pfitzinger, Higdon, your coach&apos;s)? Load it as a IBM Fitness plan file (.json) and track every session in one place.
           </p>
 
           <input ref={inputRef} type="file" accept=".json,application/json" onChange={onFile} style={{ display: 'none' }} />

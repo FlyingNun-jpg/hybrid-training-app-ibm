@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { getUserFromRequest, getBearer, userScopedClient, rateLimit } from '@/lib/apiAuth'
-import { freshConnection, listRecentActivities, milkbagTypeFromSport } from '@/lib/strava'
+import { freshConnection, listRecentActivities, appTypeFromSport } from '@/lib/strava'
 
 // Recent Strava activities, slimmed for the dashboard's import inbox. Requires the
 // connection to have the activity:read scope (connections made before that scope
@@ -28,7 +28,7 @@ export async function GET(req: NextRequest) {
 
     const fmtPace = (secPerKm: number) => `${Math.floor(secPerKm / 60)}:${String(Math.round(secPerKm % 60)).padStart(2, '0')}`
     const activities = (raw || []).flatMap((a: any) => {
-      const type = milkbagTypeFromSport(a.sport_type)
+      const type = appTypeFromSport(a.sport_type)
       if (!type) return []
       const distanceKm = a.distance > 0 ? Math.round((a.distance / 1000) * 100) / 100 : null
       const movingMin = a.moving_time > 0 ? Math.round(a.moving_time / 60) : null

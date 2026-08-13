@@ -44,7 +44,7 @@ export async function POST(req: NextRequest) {
       startDateLocal: `${date}T${hh}:${mm}:00`,
       elapsedSec,
       distanceMeters: type === 'run' && distanceKm ? Math.round(parseFloat(distanceKm) * 1000) : undefined,
-      description: description || 'Logged with Milkbag 🥛',
+      description: description || 'Logged with IBM Fitness ',
     })
     return NextResponse.json({ activityId: activity.id })
   } catch (err: any) {

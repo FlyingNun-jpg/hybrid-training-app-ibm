@@ -504,7 +504,7 @@ export default function WorkoutDetailPage() {
         }
       }
       if (session.type === 'run' && runLog.heartRate) detailLines.push(`Avg HR ${runLog.heartRate} bpm${runLog.cadence ? ` · cadence ${runLog.cadence}` : ''}`)
-      const description = [...detailLines, `Logged with Milkbag 🥛${feel ? ` · felt ${feel.replace('_', ' ')}` : ''}`].join('\n')
+      const description = [...detailLines, `Logged with IBM Fitness ${feel ? ` · felt ${feel.replace('_', ' ')}` : ''}`].join('\n')
       const res = await fetch('/api/strava/sync', {
         method: 'POST',
         headers: {
@@ -623,7 +623,7 @@ export default function WorkoutDetailPage() {
           <div style={{ width: 26, height: 26, borderRadius: 6, background: 'var(--accent)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <span style={{ color: 'var(--accent-fg)', fontSize: 9, fontWeight: 500 }}>MB</span>
           </div>
-          <span style={{ color: 'var(--text)', fontWeight: 500, fontSize: 15, letterSpacing: '-0.2px' }}>Milkbag</span>
+          <span style={{ color: 'var(--text)', fontWeight: 500, fontSize: 15, letterSpacing: '-0.2px' }}>IBM Fitness</span>
         </div>
         {saved && (
           <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: 'var(--hyrox)', fontWeight: 500 }}>
@@ -887,7 +887,7 @@ export default function WorkoutDetailPage() {
             <div style={{ padding: '12px 16px', borderBottom: '0.5px solid var(--border)', display: 'flex', alignItems: 'center', gap: 10 }}>
               <div style={{ width: 30, height: 30, borderRadius: '50%', background: 'var(--bg)', border: '0.5px solid var(--border)', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, fontSize: 14 }}>🤖</div>
               <div>
-                <div style={{ fontSize: 13, fontWeight: 500, color: 'var(--text)' }}>Milkbag Coach</div>
+                <div style={{ fontSize: 13, fontWeight: 500, color: 'var(--text)' }}>IBM Fitness Coach</div>
                 <div style={{ fontSize: 11, color: 'var(--text-muted)' }}>{aiLoading ? 'Analysing…' : 'Post-workout feedback'}</div>
               </div>
             </div>

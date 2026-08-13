@@ -282,7 +282,7 @@ export default function DashboardPage() {
   const [dismissedAdjust, setDismissedAdjust] = useState(true)
   const [newBadges, setNewBadges] = useState<Badge[]>([])
   const [recapDismissed, setRecapDismissed] = useState(true)
-  // Strava import inbox: recent Strava activities not yet linked to a Milkbag log.
+  // Strava import inbox: recent Strava activities not yet linked to a IBM Fitness log.
   const [stravaInbox, setStravaInbox] = useState<any[]>([])
   const [stravaNeedsReconnect, setStravaNeedsReconnect] = useState(false)
   const [dismissedStrava, setDismissedStrava] = useState<Set<string>>(new Set())
@@ -422,7 +422,7 @@ export default function DashboardPage() {
     ctx.fillStyle = bg; ctx.fillRect(0, 0, 1080, 1080)
     ctx.fillStyle = accent; ctx.fillRect(80, 96, 64, 64)
     ctx.fillStyle = bg; ctx.font = '600 24px -apple-system, system-ui, sans-serif'; ctx.fillText('MB', 94, 136)
-    ctx.fillStyle = text; ctx.font = '600 56px -apple-system, system-ui, sans-serif'; ctx.fillText('Milkbag', 168, 142)
+    ctx.fillStyle = text; ctx.font = '600 56px -apple-system, system-ui, sans-serif'; ctx.fillText('IBM Fitness', 168, 142)
     ctx.fillStyle = muted; ctx.font = '400 40px -apple-system, system-ui, sans-serif'
     ctx.fillText(`Week of ${lastWeekDates[0].toLocaleDateString('en', { day: 'numeric', month: 'short' })}`, 80, 240)
     const stats: [string, string][] = [
@@ -439,11 +439,11 @@ export default function DashboardPage() {
     ctx.fillText('Run far. Lift heavy. Race hard.', 80, 1000)
     const blob: Blob | null = await new Promise(r => c.toBlob(r, 'image/png'))
     if (!blob) return
-    const file = new File([blob], 'milkbag-week.png', { type: 'image/png' })
+    const file = new File([blob], 'ibm-fitness-week.png', { type: 'image/png' })
     try {
       if (navigator.canShare?.({ files: [file] })) { await navigator.share({ files: [file], title: 'My training week' }); return }
     } catch { /* fall through to download */ }
-    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'milkbag-week.png'; a.click()
+    const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'ibm-fitness-week.png'; a.click()
   }
 
   // ── Strava import inbox helpers ──
@@ -659,7 +659,7 @@ export default function DashboardPage() {
           <div style={{ width: 30, height: 30, borderRadius: 8, background: 'var(--accent)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
             <span style={{ color: 'var(--accent-fg)', fontSize: 11, fontWeight: 500, letterSpacing: '-0.5px' }}>MB</span>
           </div>
-          <span style={{ color: 'var(--text)', fontWeight: 500, fontSize: 17, letterSpacing: '-0.3px' }}>Milkbag</span>
+          <span style={{ color: 'var(--text)', fontWeight: 500, fontSize: 17, letterSpacing: '-0.3px' }}>IBM Fitness</span>
         </div>
         <div style={{ width: 32, height: 32, borderRadius: '50%', background: 'var(--bg-card)', border: '0.5px solid var(--border)', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer' }}
           onClick={() => setActiveTab('more')}>
@@ -913,7 +913,7 @@ export default function DashboardPage() {
                     )}
                     <button onClick={() => importStravaActivity(a)} disabled={importingId === String(a.id)}
                       style={{ width: '100%', background: 'var(--accent)', color: 'var(--accent-fg)', border: 'none', borderRadius: 10, padding: '10px 12px', fontSize: 12, fontWeight: 600, cursor: 'pointer', opacity: importingId === String(a.id) ? 0.6 : 1 }}>
-                      {importingId === String(a.id) ? 'Importing…' : options.length > 0 && sel ? 'Import & mark complete' : 'Import to Milkbag'}
+                      {importingId === String(a.id) ? 'Importing…' : options.length > 0 && sel ? 'Import & mark complete' : 'Import to IBM Fitness'}
                     </button>
                     {a.type === 'lift' && (
                       <p style={{ fontSize: 10, color: 'var(--text-faint)', marginTop: 6, lineHeight: 1.4 }}>Strava only tracks time & heart rate for lifts — open the session afterwards to add your sets.</p>

@@ -170,7 +170,7 @@ export default function OnboardingPage() {
       days_per_week: (runCount ?? 0) + (liftCount ?? 0)
     })
 
-    setLoadingMsg(importedFile ? 'Importing your training file...' : 'Milkbag is building your plan...')
+    setLoadingMsg(importedFile ? 'Importing your training file...' : 'IBM Fitness is building your plan...')
     const weeks = getWeeksForPlan()
     // If the athlete runs but didn't pick a volume, fall back to the recommendation.
     const resolvedPeak = (runCount ?? 0) > 0 ? (peakKm ?? recommendedPeak()) : null
@@ -555,11 +555,11 @@ export default function OnboardingPage() {
             {((liftCount ?? 0) > 0 || ['hyrox','hyrox_doubles'].includes(goalRace)) && (
               <div style={{ marginBottom: 28 }}>
                 <h2 style={{ fontSize: 22, fontWeight: 500, color: 'var(--text)', marginBottom: 6 }}>How should we handle strength?</h2>
-                <p style={{ fontSize: 13, color: 'var(--text-muted)', marginBottom: 14 }}>Let Milkbag program your lifts, or build your own and we&apos;ll program the running around them.</p>
+                <p style={{ fontSize: 13, color: 'var(--text-muted)', marginBottom: 14 }}>Let IBM Fitness program your lifts, or build your own and we&apos;ll program the running around them.</p>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
                   {[
-                    { src: 'ai' as const, gym: true, label: 'Milkbag builds it — full gym', desc: 'Barbells, machines, sled, erg available' },
-                    { src: 'ai' as const, gym: false, label: 'Milkbag builds it — home / bodyweight', desc: 'Bodyweight, backpack, jugs — we adapt every movement' },
+                    { src: 'ai' as const, gym: true, label: 'IBM Fitness builds it — full gym', desc: 'Barbells, machines, sled, erg available' },
+                    { src: 'ai' as const, gym: false, label: 'IBM Fitness builds it — home / bodyweight', desc: 'Bodyweight, backpack, jugs — we adapt every movement' },
                     { src: 'manual' as const, gym: true, label: '🏋️ Build my own strength plan', desc: 'Pick your split & lifts; we build the running around them' },
                   ].map(opt => {
                     const selected = opt.src === 'manual' ? strengthSource === 'manual' : (strengthSource === 'ai' && hasGym === opt.gym)

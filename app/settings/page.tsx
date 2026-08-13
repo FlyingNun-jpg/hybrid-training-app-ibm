@@ -4,11 +4,11 @@ import { useTheme } from '@/lib/theme-context'
 import { Button } from '@/components/ui/button'
 
 const THEMES = [
-  { id: 'carbon',   name: 'Carbon',        desc: 'Signature — deep carbon & volt',  bg: '#0a0b0d', card: '#15171b', mark: '#d8f64a', markFg: '#0a0b0d', bar: '#ff6a3d', label: '#9aa1aa' },
+  { id: 'ibm-fitness', name: 'IBM Fitness',    desc: 'IBM Carbon — clean light blue',   bg: '#f4f4f4', card: '#ffffff', mark: '#0f62fe', markFg: '#ffffff', bar: '#da1e28', label: '#525252' },
+  { id: 'ibm-dark',    name: 'IBM Dark',       desc: 'IBM Carbon — deep dark blue',     bg: '#161616', card: '#262626', mark: '#4589ff', markFg: '#161616', bar: '#ff8389', label: '#c6c6c6' },
+  { id: 'carbon',   name: 'Carbon',        desc: 'Deep carbon & volt',              bg: '#0a0b0d', card: '#15171b', mark: '#d8f64a', markFg: '#0a0b0d', bar: '#ff6a3d', label: '#9aa1aa' },
   { id: 'apex',     name: 'Apex',          desc: 'Clean white & cobalt',            bg: '#f6f8fb', card: '#ffffff', mark: '#2563eb', markFg: '#ffffff', bar: '#f0613c', label: '#5b6573' },
   { id: 'sand',     name: 'Sand',          desc: 'Warm beige & flat clay',          bg: '#ece4d6', card: '#f7f1e6', mark: '#a4744a', markFg: '#faf6ee', bar: '#c2683a', label: '#7c6e5b' },
-  { id: 'milkbag',  name: 'Milkbag',       desc: 'Clean & vibrant light',           bg: '#f6f7fb', card: '#ffffff', mark: '#5b4deb', markFg: '#ffffff', bar: '#f0613c', label: '#6b6b85' },
-  { id: 'kings',    name: 'Milkbag Kings', desc: '👑 Built different',              bg: '#0d0d1a', card: '#141428', mark: '#ffc800', markFg: '#0d0d1a', bar: '#ff4d6d', label: '#ffc800' },
   { id: 'hotpink',  name: 'Hot Pink',      desc: 'Clean & vibrant pink',            bg: '#fff2f8', card: '#ffffff', mark: '#e8408a', markFg: '#ffffff', bar: '#c026d3', label: '#9a5c79' },
   { id: 'camo',     name: 'Camo',          desc: 'Army olive & khaki',              bg: '#20251a', card: '#2b3222', mark: '#8a9a3f', markFg: '#14180e', bar: '#c0702f', label: '#9aa37e' },
   { id: 'hotgirlsummer', name: 'Hot Girl Summer', desc: '☀️ Bold sunset pink & coral', bg: '#fff2ec', card: '#ffffff', mark: '#ff2e88', markFg: '#ffffff', bar: '#ff6f4c', label: '#9a5566' },

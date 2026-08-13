@@ -50,7 +50,7 @@ export async function GET(req: NextRequest) {
     if (wi < 0 || wi > weeks.length - 1) return null
     const sessions = (weeks[wi].sessions ?? []).filter((s: any) => s.day === todayAbbrev && s.type !== 'rest')
     if (!sessions.length) return null
-    return `Today: ${sessions.map((s: any) => s.title).join(' + ')}. Let's go. 🥛`
+    return `Today: ${sessions.map((s: any) => s.title).join(' + ')}. Let's go. `
   }
 
   let sent = 0
@@ -61,7 +61,7 @@ export async function GET(req: NextRequest) {
     try {
       await webpush.sendNotification(
         { endpoint: s.endpoint, keys: { p256dh: s.p256dh, auth: s.auth } },
-        JSON.stringify({ title: 'Milkbag', body }),
+        JSON.stringify({ title: 'IBM Fitness', body }),
       )
       sent++
     } catch (err: any) {

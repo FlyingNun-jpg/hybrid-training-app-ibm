@@ -11,7 +11,7 @@ import { getUserFromRequest, rateLimit } from '@/lib/apiAuth'
 
 // Build the WatsonX client once at module level (reused across requests).
 // WATSONX_API_KEY  — IAM API key from IBM Cloud (cloud.ibm.com → Manage → Access → API keys)
-// WATSONX_PROJECT_ID — WatsonX project ID (watsonx.ai → your project → Manage → General)
+// WATSONX_SPACE_ID   — Deployment space GUID (watsonx.ai → Deployment spaces → your space → Manage)
 // WATSONX_URL       — regional endpoint, e.g. https://us-south.ml.cloud.ibm.com
 const watsonx = WatsonXAI.newInstance({
   authenticator: new IamAuthenticator({ apikey: process.env.WATSONX_API_KEY! }),

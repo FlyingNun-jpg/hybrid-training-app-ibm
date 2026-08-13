@@ -41,7 +41,7 @@ export default function SignupPage() {
           <div style={{ width: 60, height: 60, borderRadius: 16, background: 'var(--accent)', display: 'inline-flex', alignItems: 'center', justifyContent: 'center', marginBottom: 16 }}>
             <span style={{ color: 'var(--accent-fg)', fontSize: 20, fontWeight: 700, letterSpacing: '-0.5px' }}>MB</span>
           </div>
-          <h1 style={{ fontSize: 30, fontWeight: 600, color: 'var(--text)', letterSpacing: '-0.6px' }}>Milkbag</h1>
+          <h1 style={{ fontSize: 30, fontWeight: 600, color: 'var(--text)', letterSpacing: '-0.6px' }}>IBM Fitness</h1>
           <p style={{ color: 'var(--text-muted)', fontSize: 14, marginTop: 4 }}>Your hybrid training starts here.</p>
         </div>
         {confirmSent ? (

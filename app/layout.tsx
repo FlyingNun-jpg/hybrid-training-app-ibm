@@ -7,13 +7,13 @@ import { ThemeProvider } from '@/lib/theme-context'
 import SWRegister from '@/components/SWRegister'
 
 export const metadata: Metadata = {
-  title: 'Milkbag v0.1',
+  title: 'IBM Fitness',
   description: 'Run far. Lift heavy. Race hard.',
   manifest: '/manifest.json',
   appleWebApp: {
     capable: true,
     statusBarStyle: 'default',
-    title: 'Milkbag',
+    title: 'IBM Fitness',
   },
   icons: {
     icon: '/icon-192.png',

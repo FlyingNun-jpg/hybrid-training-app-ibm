@@ -62,7 +62,7 @@ export async function freshConnection(sb: SupabaseClient, userId: string): Promi
   return updated
 }
 
-// Milkbag workout type → Strava sport_type.
+// IBM Fitness workout type → Strava sport_type.
 export function stravaSportType(type: string): string {
   if (type === 'run') return 'Run'
   if (type === 'lift') return 'WeightTraining'
@@ -91,9 +91,9 @@ export async function createActivity(conn: StravaConnection, a: {
   return res.json() as Promise<{ id: number }>
 }
 
-// Strava sport_type → Milkbag workout type, for importing activities INTO the app.
+// Strava sport_type → IBM Fitness workout type, for importing activities INTO the app.
 // Returns null for sports the app has no concept of (rides, swims, …).
-export function milkbagTypeFromSport(sportType: string): 'run' | 'lift' | 'hyrox' | null {
+export function appTypeFromSport(sportType: string): 'run' | 'lift' | 'hyrox' | null {
   if (/^(Run|TrailRun|VirtualRun)$/.test(sportType)) return 'run'
   if (/^(WeightTraining|Crossfit)$/.test(sportType)) return 'lift'
   if (sportType === 'Workout') return 'hyrox'
@@ -109,7 +109,7 @@ export async function listRecentActivities(conn: StravaConnection, afterEpochSec
   return res.json() as Promise<any[]>
 }
 
-// Revoke Milkbag's access on the Strava side (best-effort).
+// Revoke IBM Fitness's access on the Strava side (best-effort).
 export async function deauthorize(accessToken: string) {
   try {
     await fetch('https://www.strava.com/oauth/deauthorize', {
