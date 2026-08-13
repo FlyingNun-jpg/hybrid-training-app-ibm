@@ -1,0 +1,264 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Apex — clean white + cobalt athletic */
+[data-theme="apex"] {
+  color-scheme: light;
+  --bg: #f6f8fb; --bg-card: #ffffff; --bg-nav: #ffffff;
+  --border: rgba(16,24,40,0.08); --border-strong: rgba(37,99,235,0.30);
+  --text: #101828; --text-muted: #5b6573; --text-faint: #98a2b3;
+  --accent: #2563eb; --accent-fg: #ffffff;
+  --run: #f0613c; --lift: #7c3aed; --hyrox: #10b981;
+}
+/* Carbon — signature default: deep carbon + volt (dark) */
+:root, [data-theme="carbon"] {
+  color-scheme: dark;
+  --bg: #0a0b0d; --bg-card: #15171b; --bg-nav: #0c0e11;
+  --border: rgba(255,255,255,0.08); --border-strong: rgba(255,255,255,0.18);
+  --text: #f5f6f7; --text-muted: #9aa1aa; --text-faint: #5b626c;
+  --accent: #d8f64a; --accent-fg: #0a0b0d;
+  --run: #ff6a3d; --lift: #4d9bff; --hyrox: #2bd4a0;
+  --hero-run: #ff6a3d; --hero-run-fg: #0a0b0d;
+  --hero-push: #ff8f4d; --hero-push-fg: #0a0b0d;
+  --hero-pull: #4d9bff; --hero-pull-fg: #0a0b0d;
+  --hero-legs: #f5c518; --hero-legs-fg: #0a0b0d;
+  --hero-hyrox: #2bd4a0; --hero-hyrox-fg: #0a0b0d;
+  --hero-lift: #d8f64a; --hero-lift-fg: #0a0b0d;
+}
+/* Milkbag — clean & vibrant light */
+[data-theme="milkbag"] {
+  color-scheme: light;
+  --bg: #f6f7fb; --bg-card: #ffffff; --bg-nav: #ffffff;
+  --border: rgba(20,20,45,0.08); --border-strong: rgba(91,77,235,0.3);
+  --text: #15152b; --text-muted: #6b6b85; --text-faint: #a3a3b5;
+  --accent: #5b4deb; --accent-fg: #ffffff;
+  --run: #f0613c; --lift: #2f6bff; --hyrox: #00b377;
+}
+/* Milkbag Kings — built different */
+[data-theme="kings"] {
+  color-scheme: dark;
+  --bg: #0d0d1a; --bg-card: #141428; --bg-nav: #0d0d1a;
+  --border: rgba(255,200,0,0.15); --border-strong: rgba(255,200,0,0.32);
+  --text: #ffffff; --text-muted: #ffc800; --text-faint: #7a6a00;
+  --accent: #ffc800; --accent-fg: #0d0d1a;
+  --run: #ff4d6d; --lift: #00f5d4; --hyrox: #ffc800;
+}
+/* Sand — warm beige & eggshell with flat clay tones */
+[data-theme="sand"] {
+  color-scheme: light;
+  --bg: #ece4d6; --bg-card: #f7f1e6; --bg-nav: #ece4d6;
+  --border: rgba(74,59,42,0.14); --border-strong: rgba(74,59,42,0.28);
+  --text: #3b3026; --text-muted: #7c6e5b; --text-faint: #ab9d86;
+  --accent: #a4744a; --accent-fg: #faf6ee;
+  --run: #c2683a; --lift: #5f7c93; --hyrox: #6f8f5a;
+}
+/* Hot Pink — clean & vibrant pink */
+[data-theme="hotpink"] {
+  color-scheme: light;
+  --bg: #fff2f8; --bg-card: #ffffff; --bg-nav: #ffffff;
+  --border: rgba(160,30,90,0.12); --border-strong: rgba(232,64,138,0.4);
+  --text: #2a121f; --text-muted: #9a5c79; --text-faint: #d59cba;
+  --accent: #e8408a; --accent-fg: #ffffff;
+  --run: #f0613c; --lift: #c026d3; --hyrox: #d6336c;
+}
+/* Camo — olive, khaki & army green */
+[data-theme="camo"] {
+  color-scheme: dark;
+  --bg: #20251a; --bg-card: #2b3222; --bg-nav: #20251a;
+  --border: rgba(180,190,150,0.12); --border-strong: rgba(150,170,90,0.32);
+  --text: #e9ebd9; --text-muted: #9aa37e; --text-faint: #5f6b48;
+  --accent: #8a9a3f; --accent-fg: #14180e;
+  --run: #c0702f; --lift: #6f9450; --hyrox: #b3a04a;
+}
+
+
+/* Hot Girl Summer — bold sunset: magenta-pink, coral & teal */
+[data-theme="hotgirlsummer"] {
+  color-scheme: light;
+  --bg: #fff2ec; --bg-card: #ffffff; --bg-nav: #fff7f3;
+  --border: rgba(214,31,105,0.12); --border-strong: rgba(255,46,136,0.40);
+  --text: #3a0f24; --text-muted: #9a5566; --text-faint: #d7a0ab;
+  --accent: #ff2e88; --accent-fg: #ffffff;
+  --run: #ff6f4c; --lift: #d61f69; --hyrox: #14b8a6;
+}
+/* Sunset Coast — warm coral, tangerine & raspberry */
+[data-theme="sunsetcoast"] {
+  color-scheme: light;
+  --bg: #fff3ea; --bg-card: #ffffff; --bg-nav: #fff8f2;
+  --border: rgba(180,90,50,0.14); --border-strong: rgba(226,61,109,0.40);
+  --text: #3a2018; --text-muted: #9a6f5c; --text-faint: #d8b6a4;
+  --accent: #ff6f4c; --accent-fg: #ffffff;
+  --run: #ff6f4c; --lift: #e23d6d; --hyrox: #13b1a6;
+  --hero-run: #ff6f4c; --hero-run-fg: #ffffff;
+  --hero-push: #ff9012; --hero-push-fg: #ffffff;
+  --hero-pull: #e23d6d; --hero-pull-fg: #ffffff;
+  --hero-legs: #e8a300; --hero-legs-fg: #3a2018;
+  --hero-hyrox: #13b1a6; --hero-hyrox-fg: #ffffff;
+  --hero-lift: #ff6f4c; --hero-lift-fg: #ffffff;
+}
+/* Forest Trail — sage, moss & clay */
+[data-theme="foresttrail"] {
+  color-scheme: light;
+  --bg: #eef0e6; --bg-card: #f8f9f2; --bg-nav: #eef0e6;
+  --border: rgba(50,70,40,0.16); --border-strong: rgba(90,138,60,0.40);
+  --text: #25301f; --text-muted: #6a7a58; --text-faint: #a3b08f;
+  --accent: #5a8a3c; --accent-fg: #ffffff;
+  --run: #5a8a3c; --lift: #a8773f; --hyrox: #2f7d6b;
+  --hero-run: #5a8a3c; --hero-run-fg: #ffffff;
+  --hero-push: #b5562a; --hero-push-fg: #ffffff;
+  --hero-pull: #a8773f; --hero-pull-fg: #ffffff;
+  --hero-legs: #8a8a2f; --hero-legs-fg: #ffffff;
+  --hero-hyrox: #2f7d6b; --hero-hyrox-fg: #ffffff;
+  --hero-lift: #6a7a48; --hero-lift-fg: #ffffff;
+}
+/* Molten Carbon — charcoal & molten metals (dark) */
+[data-theme="moltencarbon"] {
+  color-scheme: dark;
+  --bg: #100d0b; --bg-card: #1b1714; --bg-nav: #120e0c;
+  --border: rgba(255,200,150,0.10); --border-strong: rgba(255,122,24,0.35);
+  --text: #f7efe6; --text-muted: #ab9684; --text-faint: #5f5246;
+  --accent: #ff7a18; --accent-fg: #100d0b;
+  --run: #ff7a18; --lift: #d99023; --hyrox: #e0b878;
+  --hero-run: #ff7a18; --hero-run-fg: #100d0b;
+  --hero-push: #ff4d2e; --hero-push-fg: #100d0b;
+  --hero-pull: #d99023; --hero-pull-fg: #100d0b;
+  --hero-legs: #c0a020; --hero-legs-fg: #100d0b;
+  --hero-hyrox: #e0b878; --hero-hyrox-fg: #100d0b;
+  --hero-lift: #ff7a18; --hero-lift-fg: #100d0b;
+}
+/* Pastel Pop — soft candy pastels */
+[data-theme="pastelpop"] {
+  color-scheme: light;
+  --bg: #fbf3fb; --bg-card: #ffffff; --bg-nav: #fff8fd;
+  --border: rgba(150,90,150,0.13); --border-strong: rgba(255,95,168,0.42);
+  --text: #3a223a; --text-muted: #9a7a9a; --text-faint: #d4b9d4;
+  --accent: #ff5fa8; --accent-fg: #ffffff;
+  --run: #ff7a8c; --lift: #b98fe0; --hyrox: #4bb8a8;
+  --hero-run: #ff9a8b; --hero-run-fg: #3a223a;
+  --hero-push: #ff8fc4; --hero-push-fg: #3a223a;
+  --hero-pull: #8fc7ff; --hero-pull-fg: #23303a;
+  --hero-legs: #9be3b6; --hero-legs-fg: #23362a;
+  --hero-hyrox: #c9a8ff; --hero-hyrox-fg: #2e2340;
+  --hero-lift: #ffc59e; --hero-lift-fg: #3a2a18;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--text); font-family: var(--font-geist-sans, sans-serif); }
+
+/* ── Display numerals — big stats get the mono treatment ── */
+.mb-num {
+  font-family: var(--font-geist-mono), ui-monospace, 'SF Mono', monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.5px;
+}
+
+/* Camo — organic army blobs behind the UI */
+[data-theme="camo"] body {
+  background-image:
+    radial-gradient(46px 34px at 18% 24%, rgba(58,70,38,0.6), transparent 70%),
+    radial-gradient(54px 40px at 70% 64%, rgba(38,46,28,0.55), transparent 70%),
+    radial-gradient(40px 32px at 88% 20%, rgba(92,82,50,0.42), transparent 70%),
+    radial-gradient(50px 38px at 40% 90%, rgba(70,84,46,0.5), transparent 70%);
+  background-size: 168px 168px;
+}
+
+/* ── Premium range slider ── */
+input[type="range"] {
+  -webkit-appearance: none; appearance: none;
+  height: 6px; border-radius: 6px; background: var(--border); outline: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; appearance: none;
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--run); border: 3px solid var(--bg-card);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.35); cursor: pointer;
+  transition: transform 0.12s ease;
+}
+input[type="range"]::-webkit-slider-thumb:active { transform: scale(1.15); }
+input[type="range"]::-moz-range-thumb {
+  width: 22px; height: 22px; border-radius: 50%;
+  background: var(--run); border: 3px solid var(--bg-card);
+  box-shadow: 0 2px 10px rgba(0,0,0,0.35); cursor: pointer;
+}
+input[type="range"]::-moz-range-track { height: 6px; border-radius: 6px; background: var(--border); }
+
+/* Date input — keep the native calendar indicator visible & tappable across themes */
+input[type="date"]::-webkit-calendar-picker-indicator { cursor: pointer; opacity: 0.7; }
+input[type="date"]::-webkit-calendar-picker-indicator:hover { opacity: 1; }
+
+/* Two-frame exercise demo loop (start ↔ finish position) */
+@keyframes mb-flip { 0%,45% { opacity: 1 } 55%,100% { opacity: 0 } }
+
+/* Prevent iOS Safari from zooming in when focusing inputs (font-size must be >=16px) */
+@media (max-width: 600px) {
+  input, select, textarea { font-size: 16px !important; }
+}
+
+/* ── Smooth transitions & motion ── */
+@media (prefers-reduced-motion: no-preference) {
+  /* Native cross-page view transitions */
+  @view-transition { navigation: auto; }
+
+  /* Page content fades + slides up on load */
+  @keyframes mb-fade-in {
+    from { opacity: 0; transform: translateY(8px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  body > * { animation: mb-fade-in 0.32s cubic-bezier(0.22, 1, 0.36, 1); }
+}
+
+/* Tap feedback — cards & buttons gently depress */
+[role="button"], button, a, [data-tap] {
+  -webkit-tap-highlight-color: transparent;
+  transition: transform 0.12s cubic-bezier(0.22, 1, 0.36, 1), opacity 0.12s ease;
+}
+[role="button"]:active, button:active, [data-tap]:active {
+  transform: scale(0.975);
+  opacity: 0.9;
+}
+
+/* Smooth scrolling + prevent horizontal overflow on mobile */
+html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+body { overflow-x: hidden; }
+
+/* Momentum scrolling on iOS */
+* { -webkit-overflow-scrolling: touch; }
+
+/* ── Professional motion system ── */
+@media (prefers-reduced-motion: no-preference) {
+  /* Content entrance — used when tabs/days change */
+  @keyframes mb-slide-up {
+    from { opacity: 0; transform: translateY(10px); }
+    to   { opacity: 1; transform: translateY(0); }
+  }
+  @keyframes mb-slide-in {
+    from { opacity: 0; transform: translateX(12px); }
+    to   { opacity: 1; transform: translateX(0); }
+  }
+  @keyframes mb-scale-in {
+    from { opacity: 0; transform: scale(0.97); }
+    to   { opacity: 1; transform: scale(1); }
+  }
+
+  .mb-animate { animation: mb-slide-up 0.35s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .mb-animate-scale { animation: mb-scale-in 0.3s cubic-bezier(0.22, 1, 0.36, 1) both; }
+
+  /* Staggered children — cards cascade in */
+  .mb-stagger > * { animation: mb-slide-up 0.4s cubic-bezier(0.22, 1, 0.36, 1) both; }
+  .mb-stagger > *:nth-child(1) { animation-delay: 0ms; }
+  .mb-stagger > *:nth-child(2) { animation-delay: 40ms; }
+  .mb-stagger > *:nth-child(3) { animation-delay: 80ms; }
+  .mb-stagger > *:nth-child(4) { animation-delay: 120ms; }
+  .mb-stagger > *:nth-child(5) { animation-delay: 160ms; }
+  .mb-stagger > *:nth-child(6) { animation-delay: 200ms; }
+
+  /* Smooth hover lift on cards (desktop) */
+  @media (hover: hover) {
+    [data-card]:hover { transform: translateY(-1px); box-shadow: 0 4px 16px rgba(0,0,0,0.08); }
+    [data-card] { transition: transform 0.2s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.2s ease; }
+  }
+
+  /* Progress bars ease */
+  [data-progress] { transition: width 0.6s cubic-bezier(0.22, 1, 0.36, 1); }
+}

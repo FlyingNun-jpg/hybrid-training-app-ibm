@@ -1,0 +1,1126 @@
+{
+  "planName": "Pfitzinger 18/70 Marathon",
+  "goalRace": "marathon",
+  "planType": "marathon",
+  "raceDate": "2026-10-18",
+  "startDate": "2026-06-15",
+  "timeGoal": "Sub 2:50",
+  "weeks": [
+    {
+      "weekNumber": 1,
+      "focus": "Base — Endurance — 84.5km",
+      "sessions": [
+        {
+          "day": "Sun",
+          "type": "rest",
+          "title": "Rest / Cross-train",
+          "details": "Full rest or easy cross-training (bike/swim), HR <130.",
+          "duration": 0,
+          "distance": 0
+        },
+        {
+          "day": "Mon",
+          "type": "run",
+          "title": "GA + Speed",
+          "details": "10.6km @5:00-5:30/km, RPE 3 with 6x100m strides.",
+          "duration": 55,
+          "distance": 10.6
+        },
+        {
+          "day": "Tue",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "17.7km @4:28-4:52/km, RPE 4-5.",
+          "duration": 92,
+          "distance": 17.7
+        },
+        {
+          "day": "Wed",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "10.7km easy @5:00-5:30/km, RPE 3.",
+          "duration": 56,
+          "distance": 10.7
+        },
+        {
+          "day": "Thu",
+          "type": "run",
+          "title": "General Aerobic",
+          "details": "10.7km @4:40-5:04/km, RPE 4.",
+          "duration": 56,
+          "distance": 10.7
+        },
+        {
+          "day": "Fri",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "10.7km easy @5:00-5:30/km, RPE 3.",
+          "duration": 56,
+          "distance": 10.7
+        },
+        {
+          "day": "Sat",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "24.1km @4:28-4:52/km, RPE 4-5.",
+          "duration": 125,
+          "distance": 24.1
+        }
+      ]
+    },
+    {
+      "weekNumber": 2,
+      "focus": "Base — Endurance — 89.6km",
+      "sessions": [
+        {
+          "day": "Sun",
+          "type": "rest",
+          "title": "Rest / Cross-train",
+          "details": "Full rest or easy cross-training (bike/swim), HR <130.",
+          "duration": 0,
+          "distance": 0
+        },
+        {
+          "day": "Mon",
+          "type": "run",
+          "title": "GA + Speed",
+          "details": "10.8km @5:00-5:30/km, RPE 3 with 6x100m strides.",
+          "duration": 56,
+          "distance": 10.8
+        },
+        {
+          "day": "Tue",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "19.3km @4:28-4:52/km, RPE 4-5.",
+          "duration": 100,
+          "distance": 19.3
+        },
+        {
+          "day": "Wed",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "10.7km easy @5:00-5:30/km, RPE 3.",
+          "duration": 56,
+          "distance": 10.7
+        },
+        {
+          "day": "Thu",
+          "type": "run",
+          "title": "General Aerobic",
+          "details": "10.7km @4:40-5:04/km, RPE 4.",
+          "duration": 56,
+          "distance": 10.7
+        },
+        {
+          "day": "Fri",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "10.7km easy @5:00-5:30/km, RPE 3.",
+          "duration": 56,
+          "distance": 10.7
+        },
+        {
+          "day": "Sat",
+          "type": "run",
+          "title": "Long Run",
+          "details": "27.4km steady @4:28-4:52/km, RPE 4-5.",
+          "duration": 142,
+          "distance": 27.4
+        }
+      ]
+    },
+    {
+      "weekNumber": 3,
+      "focus": "Base — Endurance — 92.8km",
+      "sessions": [
+        {
+          "day": "Sun",
+          "type": "rest",
+          "title": "Rest / Cross-train",
+          "details": "Full rest or easy cross-training (bike/swim), HR <130.",
+          "duration": 0,
+          "distance": 0
+        },
+        {
+          "day": "Mon",
+          "type": "run",
+          "title": "Lactate Threshold",
+          "details": "14.5km w/6.4km @3:50-3:55/km threshold, HR 155-168. WU/CD easy.",
+          "duration": 75,
+          "distance": 14.5
+        },
+        {
+          "day": "Tue",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "20.9km @4:28-4:52/km, RPE 4-5.",
+          "duration": 109,
+          "distance": 20.9
+        },
+        {
+          "day": "Wed",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "11.1km easy @5:00-5:30/km, RPE 3.",
+          "duration": 58,
+          "distance": 11.1
+        },
+        {
+          "day": "Thu",
+          "type": "run",
+          "title": "General Aerobic",
+          "details": "11.1km @4:40-5:04/km, RPE 4.",
+          "duration": 58,
+          "distance": 11.1
+        },
+        {
+          "day": "Fri",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "11.1km easy @5:00-5:30/km, RPE 3.",
+          "duration": 58,
+          "distance": 11.1
+        },
+        {
+          "day": "Sat",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "24.1km @4:28-4:52/km, RPE 4-5.",
+          "duration": 125,
+          "distance": 24.1
+        }
+      ]
+    },
+    {
+      "weekNumber": 4,
+      "focus": "Base — Endurance — 96km",
+      "sessions": [
+        {
+          "day": "Sun",
+          "type": "rest",
+          "title": "Rest / Cross-train",
+          "details": "Full rest or easy cross-training (bike/swim), HR <130.",
+          "duration": 0,
+          "distance": 0
+        },
+        {
+          "day": "Mon",
+          "type": "run",
+          "title": "GA + Speed",
+          "details": "10.5km @5:00-5:30/km, RPE 3 with 6x100m strides.",
+          "duration": 55,
+          "distance": 10.5
+        },
+        {
+          "day": "Tue",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "22.5km @4:28-4:52/km, RPE 4-5.",
+          "duration": 117,
+          "distance": 22.5
+        },
+        {
+          "day": "Wed",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "10.6km easy @5:00-5:30/km, RPE 3.",
+          "duration": 55,
+          "distance": 10.6
+        },
+        {
+          "day": "Thu",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "17.7km @4:28-4:52/km, RPE 4-5.",
+          "duration": 92,
+          "distance": 17.7
+        },
+        {
+          "day": "Fri",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "10.6km easy @5:00-5:30/km, RPE 3.",
+          "duration": 55,
+          "distance": 10.6
+        },
+        {
+          "day": "Sat",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "24.1km @4:28-4:52/km, RPE 4-5.",
+          "duration": 125,
+          "distance": 24.1
+        }
+      ]
+    },
+    {
+      "weekNumber": 5,
+      "focus": "Base — Endurance — 103km",
+      "sessions": [
+        {
+          "day": "Sun",
+          "type": "rest",
+          "title": "Rest / Cross-train",
+          "details": "Full rest or easy cross-training (bike/swim), HR <130.",
+          "duration": 0,
+          "distance": 0
+        },
+        {
+          "day": "Mon",
+          "type": "run",
+          "title": "Lactate Threshold",
+          "details": "14.5km w/6.4km @3:50-3:55/km threshold, HR 155-168 (15K-HM effort).",
+          "duration": 75,
+          "distance": 14.5
+        },
+        {
+          "day": "Tue",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "22.5km @4:28-4:52/km, RPE 4-5.",
+          "duration": 117,
+          "distance": 22.5
+        },
+        {
+          "day": "Wed",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "7.2km easy @5:00-5:30/km, RPE 3.",
+          "duration": 37,
+          "distance": 7.2
+        },
+        {
+          "day": "Thu",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "19.3km @4:28-4:52/km, RPE 4-5.",
+          "duration": 100,
+          "distance": 19.3
+        },
+        {
+          "day": "Fri",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "7.3km easy @5:00-5:30/km, RPE 3.",
+          "duration": 38,
+          "distance": 7.3
+        },
+        {
+          "day": "Sat",
+          "type": "run",
+          "title": "Long Run",
+          "details": "32.2km steady @4:28-4:52/km, RPE 4-5.",
+          "duration": 167,
+          "distance": 32.2
+        }
+      ]
+    },
+    {
+      "weekNumber": 6,
+      "focus": "Base — Endurance (down week) — 89km",
+      "sessions": [
+        {
+          "day": "Sun",
+          "type": "rest",
+          "title": "Rest / Cross-train",
+          "details": "Full rest or easy cross-training (bike/swim), HR <130.",
+          "duration": 0,
+          "distance": 0
+        },
+        {
+          "day": "Mon",
+          "type": "run",
+          "title": "GA + Speed",
+          "details": "9.3km @5:00-5:30/km, RPE 3 with 6x100m strides.",
+          "duration": 48,
+          "distance": 9.3
+        },
+        {
+          "day": "Tue",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "19.3km @4:28-4:52/km, RPE 4-5.",
+          "duration": 100,
+          "distance": 19.3
+        },
+        {
+          "day": "Wed",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "9.3km easy @5:00-5:30/km, RPE 3.",
+          "duration": 48,
+          "distance": 9.3
+        },
+        {
+          "day": "Thu",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "17.7km @4:28-4:52/km, RPE 4-5.",
+          "duration": 92,
+          "distance": 17.7
+        },
+        {
+          "day": "Fri",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "9.3km easy @5:00-5:30/km, RPE 3.",
+          "duration": 48,
+          "distance": 9.3
+        },
+        {
+          "day": "Sat",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "24.1km @4:28-4:52/km, RPE 4-5.",
+          "duration": 125,
+          "distance": 24.1
+        }
+      ]
+    },
+    {
+      "weekNumber": 7,
+      "focus": "LT + Endurance — 110.4km",
+      "sessions": [
+        {
+          "day": "Sun",
+          "type": "rest",
+          "title": "Rest / Cross-train",
+          "details": "Full rest or easy cross-training (bike/swim), HR <130.",
+          "duration": 0,
+          "distance": 0
+        },
+        {
+          "day": "Mon",
+          "type": "run",
+          "title": "Lactate Threshold",
+          "details": "16.1km w/8km @3:50-3:55/km threshold, HR 155-168 (15K-HM effort).",
+          "duration": 84,
+          "distance": 16.1
+        },
+        {
+          "day": "Tue",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "22.5km @4:28-4:52/km, RPE 4-5.",
+          "duration": 117,
+          "distance": 22.5
+        },
+        {
+          "day": "Wed",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "12.6km easy @5:00-5:30/km, RPE 3.",
+          "duration": 66,
+          "distance": 12.6
+        },
+        {
+          "day": "Thu",
+          "type": "run",
+          "title": "General Aerobic",
+          "details": "12.7km @4:40-5:04/km, RPE 4.",
+          "duration": 66,
+          "distance": 12.7
+        },
+        {
+          "day": "Fri",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "12.7km easy @5:00-5:30/km, RPE 3.",
+          "duration": 66,
+          "distance": 12.7
+        },
+        {
+          "day": "Sat",
+          "type": "run",
+          "title": "Long Run",
+          "details": "33.8km steady @4:28-4:52/km, RPE 4-5. Last 8-12km @MP @4:01/km marathon pace, HR 152-165.",
+          "duration": 176,
+          "distance": 33.8
+        }
+      ]
+    },
+    {
+      "weekNumber": 8,
+      "focus": "LT + Endurance — 105.6km",
+      "sessions": [
+        {
+          "day": "Sun",
+          "type": "rest",
+          "title": "Rest / Cross-train",
+          "details": "Full rest or easy cross-training (bike/swim), HR <130.",
+          "duration": 0,
+          "distance": 0
+        },
+        {
+          "day": "Mon",
+          "type": "run",
+          "title": "Recovery (double)",
+          "details": "9.7km a.m. + 6.4km p.m. @5:00-5:30/km, RPE 3.",
+          "duration": 84,
+          "distance": 16.1
+        },
+        {
+          "day": "Tue",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "22.5km @4:28-4:52/km, RPE 4-5.",
+          "duration": 117,
+          "distance": 22.5
+        },
+        {
+          "day": "Wed",
+          "type": "run",
+          "title": "Lactate Threshold",
+          "details": "14.5km w/6.4km @3:50-3:55/km threshold, HR 155-168.",
+          "duration": 75,
+          "distance": 14.5
+        },
+        {
+          "day": "Thu",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "10.2km easy @5:00-5:30/km, RPE 3.",
+          "duration": 53,
+          "distance": 10.2
+        },
+        {
+          "day": "Fri",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "10.1km easy @5:00-5:30/km, RPE 3.",
+          "duration": 53,
+          "distance": 10.1
+        },
+        {
+          "day": "Sat",
+          "type": "run",
+          "title": "Long Run",
+          "details": "32.2km steady @4:28-4:52/km, RPE 4-5. Last 8-12km @MP.",
+          "duration": 167,
+          "distance": 32.2
+        }
+      ]
+    },
+    {
+      "weekNumber": 9,
+      "focus": "LT + Endurance — 105.6km",
+      "sessions": [
+        {
+          "day": "Sun",
+          "type": "rest",
+          "title": "Rest / Cross-train",
+          "details": "Full rest or easy cross-training (bike/swim), HR <130.",
+          "duration": 0,
+          "distance": 0
+        },
+        {
+          "day": "Mon",
+          "type": "run",
+          "title": "Recovery (double)",
+          "details": "9.7km a.m. + 6.4km p.m. @5:00-5:30/km, RPE 3.",
+          "duration": 84,
+          "distance": 16.1
+        },
+        {
+          "day": "Tue",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "19.3km @4:28-4:52/km, RPE 4-5.",
+          "duration": 100,
+          "distance": 19.3
+        },
+        {
+          "day": "Wed",
+          "type": "run",
+          "title": "Lactate Threshold",
+          "details": "16.1km w/8km @3:50-3:55/km threshold, HR 155-168.",
+          "duration": 84,
+          "distance": 16.1
+        },
+        {
+          "day": "Thu",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "15km easy @5:00-5:30/km, RPE 3.",
+          "duration": 78,
+          "distance": 15
+        },
+        {
+          "day": "Fri",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "15km easy @5:00-5:30/km, RPE 3.",
+          "duration": 78,
+          "distance": 15
+        },
+        {
+          "day": "Sat",
+          "type": "run",
+          "title": "Marathon-Specific",
+          "details": "24.1km w/19.3km @4:01/km marathon pace, HR 152-165.",
+          "duration": 125,
+          "distance": 24.1
+        }
+      ]
+    },
+    {
+      "weekNumber": 10,
+      "focus": "Recovery week — 94.4km",
+      "sessions": [
+        {
+          "day": "Sun",
+          "type": "rest",
+          "title": "Rest / Cross-train",
+          "details": "Full rest or easy cross-training (bike/swim), HR <130.",
+          "duration": 0,
+          "distance": 0
+        },
+        {
+          "day": "Mon",
+          "type": "run",
+          "title": "General Aerobic",
+          "details": "13.8km @4:40-5:04/km, RPE 4.",
+          "duration": 72,
+          "distance": 13.8
+        },
+        {
+          "day": "Tue",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "14.5km @4:28-4:52/km, RPE 4-5.",
+          "duration": 75,
+          "distance": 14.5
+        },
+        {
+          "day": "Wed",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "14km easy @5:00-5:30/km, RPE 3.",
+          "duration": 73,
+          "distance": 14
+        },
+        {
+          "day": "Thu",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "14km easy @5:00-5:30/km, RPE 3.",
+          "duration": 73,
+          "distance": 14
+        },
+        {
+          "day": "Fri",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "14km easy @5:00-5:30/km, RPE 3.",
+          "duration": 73,
+          "distance": 14
+        },
+        {
+          "day": "Sat",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "24.1km @4:28-4:52/km, RPE 4-5.",
+          "duration": 125,
+          "distance": 24.1
+        }
+      ]
+    },
+    {
+      "weekNumber": 11,
+      "focus": "LT + Endurance (peak engine) — 112km",
+      "sessions": [
+        {
+          "day": "Sun",
+          "type": "rest",
+          "title": "Rest / Cross-train",
+          "details": "Full rest or easy cross-training (bike/swim), HR <130.",
+          "duration": 0,
+          "distance": 0
+        },
+        {
+          "day": "Mon",
+          "type": "run",
+          "title": "Recovery (double)",
+          "details": "9.7km a.m. + 6.4km p.m. @5:00-5:30/km, RPE 3.",
+          "duration": 84,
+          "distance": 16.1
+        },
+        {
+          "day": "Tue",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "22.5km @4:28-4:52/km, RPE 4-5.",
+          "duration": 117,
+          "distance": 22.5
+        },
+        {
+          "day": "Wed",
+          "type": "run",
+          "title": "Lactate Threshold",
+          "details": "16.1km w/9.7km @3:50-3:55/km threshold, HR 155-168.",
+          "duration": 84,
+          "distance": 16.1
+        },
+        {
+          "day": "Thu",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "10.9km easy @5:00-5:30/km, RPE 3.",
+          "duration": 57,
+          "distance": 10.9
+        },
+        {
+          "day": "Fri",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "11km easy @5:00-5:30/km, RPE 3.",
+          "duration": 57,
+          "distance": 11
+        },
+        {
+          "day": "Sat",
+          "type": "run",
+          "title": "Long Run",
+          "details": "35.4km steady @4:28-4:52/km, RPE 4-5. Last 10-14km @MP.",
+          "duration": 184,
+          "distance": 35.4
+        }
+      ]
+    },
+    {
+      "weekNumber": 12,
+      "focus": "Race Prep — VO2max — 108.8km",
+      "sessions": [
+        {
+          "day": "Sun",
+          "type": "rest",
+          "title": "Rest / Cross-train",
+          "details": "Full rest or easy cross-training (bike/swim), HR <130.",
+          "duration": 0,
+          "distance": 0
+        },
+        {
+          "day": "Mon",
+          "type": "run",
+          "title": "VO2max Intervals",
+          "details": "14.5km w/5x600m @3:30-3:45/km, HR 170-179 (90s jog).",
+          "duration": 75,
+          "distance": 14.5
+        },
+        {
+          "day": "Tue",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "19.3km @4:28-4:52/km, RPE 4-5.",
+          "duration": 100,
+          "distance": 19.3
+        },
+        {
+          "day": "Wed",
+          "type": "run",
+          "title": "Recovery + Speed",
+          "details": "15.4km @5:00-5:30/km, RPE 3 with 6x100m strides.",
+          "duration": 80,
+          "distance": 15.4
+        },
+        {
+          "day": "Thu",
+          "type": "run",
+          "title": "General Aerobic",
+          "details": "15.3km @4:40-5:04/km, RPE 4.",
+          "duration": 80,
+          "distance": 15.3
+        },
+        {
+          "day": "Fri",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "15.3km easy @5:00-5:30/km, RPE 3.",
+          "duration": 80,
+          "distance": 15.3
+        },
+        {
+          "day": "Sat",
+          "type": "run",
+          "title": "Long Run",
+          "details": "29km steady @4:28-4:52/km, RPE 4-5. Last 10-14km @MP.",
+          "duration": 151,
+          "distance": 29
+        }
+      ]
+    },
+    {
+      "weekNumber": 13,
+      "focus": "Race Prep — VO2max — 112km",
+      "sessions": [
+        {
+          "day": "Sun",
+          "type": "rest",
+          "title": "Rest / Cross-train",
+          "details": "Full rest or easy cross-training (bike/swim), HR <130.",
+          "duration": 0,
+          "distance": 0
+        },
+        {
+          "day": "Mon",
+          "type": "run",
+          "title": "VO2max Intervals",
+          "details": "17.7km w/6x1000m @3:30-3:45/km, HR 170-179 (90s jog).",
+          "duration": 92,
+          "distance": 17.7
+        },
+        {
+          "day": "Tue",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "19.3km @4:28-4:52/km, RPE 4-5.",
+          "duration": 100,
+          "distance": 19.3
+        },
+        {
+          "day": "Wed",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "15.8km easy @5:00-5:30/km, RPE 3.",
+          "duration": 82,
+          "distance": 15.8
+        },
+        {
+          "day": "Thu",
+          "type": "run",
+          "title": "General Aerobic",
+          "details": "15.9km @4:40-5:04/km, RPE 4.",
+          "duration": 83,
+          "distance": 15.9
+        },
+        {
+          "day": "Fri",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "15.9km easy @5:00-5:30/km, RPE 3.",
+          "duration": 83,
+          "distance": 15.9
+        },
+        {
+          "day": "Sat",
+          "type": "run",
+          "title": "Marathon-Specific",
+          "details": "27.4km w/22.5km @4:01/km marathon pace, HR 152-165.",
+          "duration": 142,
+          "distance": 27.4
+        }
+      ]
+    },
+    {
+      "weekNumber": 14,
+      "focus": "Race Prep — VO2max — 100.8km",
+      "sessions": [
+        {
+          "day": "Sun",
+          "type": "rest",
+          "title": "Rest / Cross-train",
+          "details": "Full rest or easy cross-training (bike/swim), HR <130.",
+          "duration": 0,
+          "distance": 0
+        },
+        {
+          "day": "Mon",
+          "type": "run",
+          "title": "VO2max Intervals",
+          "details": "14.5km w/5x600m @3:30-3:45/km, HR 170-179 (2min jog).",
+          "duration": 75,
+          "distance": 14.5
+        },
+        {
+          "day": "Tue",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "19.3km @4:28-4:52/km, RPE 4-5.",
+          "duration": 100,
+          "distance": 19.3
+        },
+        {
+          "day": "Wed",
+          "type": "run",
+          "title": "Recovery + Speed",
+          "details": "12.6km @5:00-5:30/km, RPE 3 with 6x100m strides.",
+          "duration": 66,
+          "distance": 12.6
+        },
+        {
+          "day": "Thu",
+          "type": "run",
+          "title": "General Aerobic",
+          "details": "12.7km @4:40-5:04/km, RPE 4.",
+          "duration": 66,
+          "distance": 12.7
+        },
+        {
+          "day": "Fri",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "12.7km easy @5:00-5:30/km, RPE 3.",
+          "duration": 66,
+          "distance": 12.7
+        },
+        {
+          "day": "Sat",
+          "type": "run",
+          "title": "Long Run",
+          "details": "29km steady @4:28-4:52/km, RPE 4-5.",
+          "duration": 151,
+          "distance": 29
+        }
+      ]
+    },
+    {
+      "weekNumber": 15,
+      "focus": "Race Prep — sharpen — 108.8km",
+      "sessions": [
+        {
+          "day": "Sun",
+          "type": "rest",
+          "title": "Rest / Cross-train",
+          "details": "Full rest or easy cross-training (bike/swim), HR <130.",
+          "duration": 0,
+          "distance": 0
+        },
+        {
+          "day": "Mon",
+          "type": "run",
+          "title": "Recovery (double)",
+          "details": "9.7km a.m. + 6.4km p.m. @5:00-5:30/km, RPE 3.",
+          "duration": 84,
+          "distance": 16.1
+        },
+        {
+          "day": "Tue",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "22.5km @4:28-4:52/km, RPE 4-5.",
+          "duration": 117,
+          "distance": 22.5
+        },
+        {
+          "day": "Wed",
+          "type": "run",
+          "title": "VO2max Intervals",
+          "details": "14.5km w/5x1000m @3:30-3:45/km, HR 170-179.",
+          "duration": 75,
+          "distance": 14.5
+        },
+        {
+          "day": "Thu",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "11.8km easy @5:00-5:30/km, RPE 3.",
+          "duration": 61,
+          "distance": 11.8
+        },
+        {
+          "day": "Fri",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "11.7km easy @5:00-5:30/km, RPE 3.",
+          "duration": 61,
+          "distance": 11.7
+        },
+        {
+          "day": "Sat",
+          "type": "run",
+          "title": "Long Run",
+          "details": "32.2km steady @4:28-4:52/km, RPE 4-5. Last 10km @MP.",
+          "duration": 167,
+          "distance": 32.2
+        }
+      ]
+    },
+    {
+      "weekNumber": 16,
+      "focus": "Taper — 89.6km",
+      "sessions": [
+        {
+          "day": "Sun",
+          "type": "run",
+          "title": "Long Run",
+          "details": "27.4km steady @4:28-4:52/km, RPE 4-5. Last 6km @MP.",
+          "duration": 142,
+          "distance": 27.4
+        },
+        {
+          "day": "Mon",
+          "type": "run",
+          "title": "GA + Speed",
+          "details": "7.8km @5:00-5:30/km, RPE 3 with 6x100m strides.",
+          "duration": 41,
+          "distance": 7.8
+        },
+        {
+          "day": "Tue",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "17.7km @4:28-4:52/km, RPE 4-5.",
+          "duration": 92,
+          "distance": 17.7
+        },
+        {
+          "day": "Wed",
+          "type": "run",
+          "title": "Recovery + Speed",
+          "details": "7.9km @5:00-5:30/km, RPE 3 with 6x100m strides.",
+          "duration": 41,
+          "distance": 7.9
+        },
+        {
+          "day": "Thu",
+          "type": "run",
+          "title": "General Aerobic",
+          "details": "7.9km @4:40-5:04/km, RPE 4.",
+          "duration": 41,
+          "distance": 7.9
+        },
+        {
+          "day": "Fri",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "7.9km easy @5:00-5:30/km, RPE 3.",
+          "duration": 41,
+          "distance": 7.9
+        },
+        {
+          "day": "Sat",
+          "type": "run",
+          "title": "Tune-up Race",
+          "details": "8-10km tune-up race effort (WU/CD easy).",
+          "duration": 68,
+          "distance": 13
+        }
+      ]
+    },
+    {
+      "weekNumber": 17,
+      "focus": "Taper — 73.6km",
+      "sessions": [
+        {
+          "day": "Sun",
+          "type": "run",
+          "title": "Medium-Long Run",
+          "details": "20.9km @4:28-4:52/km, RPE 4-5.",
+          "duration": 109,
+          "distance": 20.9
+        },
+        {
+          "day": "Mon",
+          "type": "run",
+          "title": "General Aerobic",
+          "details": "7.5km @4:40-5:04/km, RPE 4.",
+          "duration": 39,
+          "distance": 7.5
+        },
+        {
+          "day": "Tue",
+          "type": "run",
+          "title": "Dress Rehearsal",
+          "details": "13km w/5km @4:01/km marathon pace, HR 152-165.",
+          "duration": 68,
+          "distance": 13
+        },
+        {
+          "day": "Wed",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "7.5km easy @5:00-5:30/km, RPE 3.",
+          "duration": 39,
+          "distance": 7.5
+        },
+        {
+          "day": "Thu",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "7.5km easy @5:00-5:30/km, RPE 3.",
+          "duration": 39,
+          "distance": 7.5
+        },
+        {
+          "day": "Fri",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "7.5km easy @5:00-5:30/km, RPE 3.",
+          "duration": 39,
+          "distance": 7.5
+        },
+        {
+          "day": "Sat",
+          "type": "run",
+          "title": "GA + Speed",
+          "details": "9.7km @4:40-5:04/km, RPE 4 with 8x100m strides.",
+          "duration": 50,
+          "distance": 9.7
+        }
+      ]
+    },
+    {
+      "weekNumber": 18,
+      "focus": "Race Week — 48km",
+      "sessions": [
+        {
+          "day": "Sun",
+          "type": "run",
+          "title": "MARATHON — Race Day",
+          "details": "42.2km — hold @4:01/km marathon pace, HR 152-165 steady, HR 150-160. Fuel every 40min.",
+          "duration": 219,
+          "distance": 42.2
+        },
+        {
+          "day": "Mon",
+          "type": "rest",
+          "title": "Rest / Cross-train",
+          "details": "Full rest or easy cross-training (bike/swim), HR <130.",
+          "duration": 0,
+          "distance": 0
+        },
+        {
+          "day": "Tue",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "-15.2km easy @5:00-5:30/km, RPE 3.",
+          "duration": -79,
+          "distance": -15.2
+        },
+        {
+          "day": "Wed",
+          "type": "run",
+          "title": "Recovery + Speed",
+          "details": "5km @5:00-5:30/km, RPE 3 with 6x100m strides.",
+          "duration": 26,
+          "distance": 5
+        },
+        {
+          "day": "Thu",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "5km easy @5:00-5:30/km, RPE 3.",
+          "duration": 26,
+          "distance": 5
+        },
+        {
+          "day": "Fri",
+          "type": "run",
+          "title": "Pre-race Shakeout",
+          "details": "6km easy with 4x100m strides.",
+          "duration": 31,
+          "distance": 6
+        },
+        {
+          "day": "Sat",
+          "type": "run",
+          "title": "Recovery Run",
+          "details": "5km easy @5:00-5:30/km, RPE 3.",
+          "duration": 26,
+          "distance": 5
+        }
+      ]
+    }
+  ]
+}
