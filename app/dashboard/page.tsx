@@ -267,7 +267,10 @@ export default function DashboardPage() {
   const [weekOffset, setWeekOffset] = useState(0)
   const [moveTarget, setMoveTarget] = useState<any>(null)
   const [selectedDay, setSelectedDay] = useState('')
-  const [activeTab, setActiveTab] = useState<'home'|'history'|'pbs'|'more'>('home')
+  const [activeTab, setActiveTab] = useState<'home'|'history'|'pbs'|'coach'|'more'>('home')
+  const [chatMessages, setChatMessages] = useState<{role:'user'|'assistant', text:string}[]>([])
+  const [chatInput, setChatInput] = useState('')
+  const [chatLoading, setChatLoading] = useState(false)
   const [expandedLog, setExpandedLog] = useState<number | null>(null)
   const [historyLimit, setHistoryLimit] = useState(50)
   const [editProfile, setEditProfile] = useState(false)
@@ -1305,6 +1308,138 @@ export default function DashboardPage() {
           </div>
         )}
 
+
+        {activeTab === 'coach' && (
+          <div key="tab-coach" className="mb-animate" style={{ display: 'flex', flexDirection: 'column', height: 'calc(100vh - 180px)' }}>
+            {/* Header */}
+            <div style={{ padding: '12px 16px 8px', borderBottom: '0.5px solid var(--border)' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                <div style={{ width: 32, height: 32, borderRadius: 8, background: 'var(--accent)', display: 'flex', alignItems: 'center', justifyContent: 'center' }}>
+                  <span style={{ color: 'var(--accent-fg)', fontSize: 16 }}>◈</span>
+                </div>
+                <div>
+                  <div style={{ fontSize: 14, fontWeight: 600, color: 'var(--text)', letterSpacing: '-0.2px' }}>IBM WatsonX Coach</div>
+                  <div style={{ fontSize: 11, color: 'var(--text-muted)' }}>Powered by Llama 3.3 · IBM WatsonX.ai</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Message thread */}
+            <div style={{ flex: 1, overflowY: 'auto', padding: '14px 16px', display: 'flex', flexDirection: 'column', gap: 12 }}>
+              {chatMessages.length === 0 && (
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 8, marginTop: 8 }}>
+                  <p style={{ fontSize: 13, color: 'var(--text-muted)', lineHeight: 1.6 }}>
+                    Ask your IBM WatsonX coach anything about your training.
+                  </p>
+                  {[
+                    'Should I deload this week?',
+                    'How do I improve my Hyrox wall ball station?',
+                    'What should I focus on 4 weeks out from race day?',
+                    'How do I balance strength and running?',
+                  ].map(q => (
+                    <button key={q} onClick={() => { setChatInput(q) }}
+                      style={{ textAlign: 'left', background: 'var(--bg-card)', border: '0.5px solid var(--border)', borderRadius: 10, padding: '10px 14px', fontSize: 13, color: 'var(--text)', cursor: 'pointer', lineHeight: 1.4 }}>
+                      {q}
+                    </button>
+                  ))}
+                </div>
+              )}
+              {chatMessages.map((m, i) => (
+                <div key={i} style={{ display: 'flex', flexDirection: 'column', alignItems: m.role === 'user' ? 'flex-end' : 'flex-start', gap: 2 }}>
+                  {m.role === 'assistant' && (
+                    <span style={{ fontSize: 10, color: 'var(--text-faint)', fontWeight: 500, letterSpacing: '0.4px', textTransform: 'uppercase', marginLeft: 2 }}>IBM WatsonX</span>
+                  )}
+                  <div style={{
+                    maxWidth: '82%', padding: '10px 14px', borderRadius: m.role === 'user' ? '16px 16px 4px 16px' : '16px 16px 16px 4px',
+                    background: m.role === 'user' ? 'var(--accent)' : 'var(--bg-card)',
+                    color: m.role === 'user' ? 'var(--accent-fg)' : 'var(--text)',
+                    border: m.role === 'assistant' ? '0.5px solid var(--border)' : 'none',
+                    fontSize: 13, lineHeight: 1.55,
+                  }}>
+                    {m.text}
+                  </div>
+                </div>
+              ))}
+              {chatLoading && (
+                <div style={{ display: 'flex', alignItems: 'flex-start', gap: 4 }}>
+                  <div style={{ background: 'var(--bg-card)', border: '0.5px solid var(--border)', borderRadius: '16px 16px 16px 4px', padding: '10px 14px' }}>
+                    <span style={{ color: 'var(--text-muted)', fontSize: 13 }}>Thinking…</span>
+                  </div>
+                </div>
+              )}
+            </div>
+
+            {/* Input */}
+            <div style={{ padding: '10px 16px', borderTop: '0.5px solid var(--border)', display: 'flex', gap: 8, background: 'var(--bg-nav)' }}>
+              <input
+                value={chatInput}
+                onChange={e => setChatInput(e.target.value)}
+                onKeyDown={e => {
+                  if (e.key === 'Enter' && !e.shiftKey && chatInput.trim()) {
+                    e.preventDefault()
+                    const userMsg = chatInput.trim()
+                    setChatInput('')
+                    setChatMessages(prev => [...prev, { role: 'user', text: userMsg }])
+                    setChatLoading(true)
+                    fetch('/api/watson-chat', {
+                      method: 'POST',
+                      headers: { 'Content-Type': 'application/json' },
+                      body: JSON.stringify({
+                        message: userMsg,
+                        history: chatMessages,
+                        profile,
+                        recentLogs: allLogs.slice(0, 10),
+                      }),
+                    })
+                      .then(r => r.json())
+                      .then(d => {
+                        setChatMessages(prev => [...prev, { role: 'assistant', text: d.response || 'Sorry, something went wrong.' }])
+                        setChatLoading(false)
+                      })
+                      .catch(() => {
+                        setChatMessages(prev => [...prev, { role: 'assistant', text: 'Connection error — please try again.' }])
+                        setChatLoading(false)
+                      })
+                  }
+                }}
+                placeholder="Ask your coach…"
+                style={{ flex: 1, background: 'var(--bg)', border: '0.5px solid var(--border-strong)', color: 'var(--text)', borderRadius: 20, padding: '10px 16px', fontSize: 14, outline: 'none' }}
+              />
+              <button
+                disabled={!chatInput.trim() || chatLoading}
+                onClick={() => {
+                  const userMsg = chatInput.trim()
+                  if (!userMsg) return
+                  setChatInput('')
+                  setChatMessages(prev => [...prev, { role: 'user', text: userMsg }])
+                  setChatLoading(true)
+                  fetch('/api/watson-chat', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({
+                      message: userMsg,
+                      history: chatMessages,
+                      profile,
+                      recentLogs: allLogs.slice(0, 10),
+                    }),
+                  })
+                    .then(r => r.json())
+                    .then(d => {
+                      setChatMessages(prev => [...prev, { role: 'assistant', text: d.response || 'Sorry, something went wrong.' }])
+                      setChatLoading(false)
+                    })
+                    .catch(() => {
+                      setChatMessages(prev => [...prev, { role: 'assistant', text: 'Connection error — please try again.' }])
+                      setChatLoading(false)
+                    })
+                }}
+                style={{ background: 'var(--accent)', color: 'var(--accent-fg)', border: 'none', borderRadius: '50%', width: 40, height: 40, fontSize: 18, cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0, opacity: chatInput.trim() && !chatLoading ? 1 : 0.4 }}>
+                ↑
+              </button>
+            </div>
+          </div>
+        )}
+
         {activeTab === 'more' && (
           <div key="tab-more" className="mb-animate mb-stagger" style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
             <div style={{ background: 'var(--bg-card)', border: '0.5px solid var(--border)', borderRadius: 14, padding: '16px', display: 'flex', alignItems: 'center', gap: 14, marginBottom: 4 }}>
@@ -1379,6 +1514,7 @@ export default function DashboardPage() {
           { id: 'home', label: 'Home' },
           { id: 'history', label: 'History' },
           { id: 'pbs', label: 'Bests' },
+          { id: 'coach', label: 'Coach' },
           { id: 'more', label: 'More' },
         ] as const).map(tab => (
           <button key={tab.id} onClick={() => setActiveTab(tab.id)}
