@@ -50,13 +50,13 @@ After the prose, on a new line add 2-3 short positive insight tags in square bra
   try {
     const result = await watsonx.generateText({
       modelId: process.env.WATSONX_COACH_MODEL || 'ibm/granite-3-3-8b-instruct',
-      projectId: process.env.WATSONX_PROJECT_ID!,
+      spaceId: process.env.WATSONX_SPACE_ID!,
       input: prompt,
       parameters: {
         max_new_tokens: 600,
         min_new_tokens: 40,
         decoding_method: 'greedy',
-        stop_sequences: ['<|user|>', '<|system|>'],
+        stop_sequences: ['<|eot_id|>', '<|start_header_id|>'],
       },
     })
 

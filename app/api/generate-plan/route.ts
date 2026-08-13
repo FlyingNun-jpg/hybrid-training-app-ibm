@@ -514,13 +514,13 @@ Return ONLY valid JSON, no markdown, no commentary:
         // capacity rather than a shared API queue.
         const result = await watsonx.generateText({
           modelId: process.env.WATSONX_PLAN_MODEL || 'ibm/granite-3-3-8b-instruct',
-          projectId: process.env.WATSONX_PROJECT_ID!,
+          spaceId: process.env.WATSONX_SPACE_ID!,
           input: prompt,
           parameters: {
             max_new_tokens: 16000,
             min_new_tokens: 100,
             decoding_method: 'greedy',
-            stop_sequences: ['<|user|>', '<|system|>'],
+            stop_sequences: ['<|eot_id|>', '<|start_header_id|>'],
           },
         })
 
